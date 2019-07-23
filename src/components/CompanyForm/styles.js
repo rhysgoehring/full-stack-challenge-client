@@ -23,6 +23,7 @@ const Input = styled.input`
   font-size: 1.5rem;
   color: black;
   border-radius: 1rem;
+  text-align: center;
 
   ::placeholder {
     color: black;
