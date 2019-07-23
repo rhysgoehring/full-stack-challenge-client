@@ -1,16 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import axios from "axios";
-
 import { MainContainer } from "../../components/Layout";
-import { StyledButton, PageHeader } from "../../components/Common";
-import { BLUE, ORANGE, GREEN, RED } from "../../Colors";
+import { PageHeader } from "../../components/Common";
 import CompanyForm from "../../components/CompanyForm";
 
-class CreateCompany extends Component {
-  componentDidMount() {
-    console.log(this.props);
-  }
-
+class CreateCompany extends React.Component {
   onSubmit = async values => {
     try {
       const response = await axios.post(

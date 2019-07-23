@@ -4,7 +4,7 @@ import axios from "axios";
 import { MainContainer } from "../../components/Layout";
 import { CompanyList, LinkButton } from "./styles";
 import CompanyListItem from "../../components/CompanyListItem";
-import { StyledButton, PageHeader } from "../../components/Common";
+import { PageHeader } from "../../components/Common";
 import { BLUE, ORANGE, GREEN, RED } from "../../Colors";
 
 class CompaniesIndex extends Component {
@@ -39,7 +39,7 @@ class CompaniesIndex extends Component {
               linkTo={`/company/${company.id}`}
             />
           ))}
-          <LinkButton to="/company/new" textColor="black" bgColor={GREEN}>
+          <LinkButton to="/company/new" text_color="black" bg_color={GREEN}>
             Add New Company
           </LinkButton>
         </CompanyList>

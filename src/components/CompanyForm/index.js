@@ -1,5 +1,5 @@
 /* eslint-disable react/prefer-stateless-function */
-import React, { Component } from "react";
+import React from "react";
 import { Formik } from "formik";
 import {
   Form,
@@ -135,7 +135,7 @@ const CompanyForm = ({
               value={values.description}
             />
           </Label>
-          <StyledButton textColor="black" bgColor={GREEN} type="submit">
+          <StyledButton text_color="black" bg_color={GREEN} type="submit">
             Submit
           </StyledButton>
         </Form>

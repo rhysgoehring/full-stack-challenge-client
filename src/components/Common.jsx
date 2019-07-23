@@ -1,11 +1,11 @@
 import styled from "styled-components/macro";
 
 const StyledButton = styled.button`
-  background-color: ${({ bgColor }) => bgColor};
-  color: ${({ textColor }) => textColor};
+  background-color: ${({ bg_color }) => bg_color};
+  color: ${({ text_color }) => text_color};
   border-width: 1px;
   border-style: solid;
-  border-color: ${({ bgColor }) => bgColor};
+  border-color: ${({ bg_color }) => bg_color};
   cursor: pointer;
   font-size: 1.7rem;
   border-radius: 1rem;
