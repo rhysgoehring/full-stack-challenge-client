@@ -5,6 +5,7 @@ import GlobalStyles from "./GlobalStyles";
 
 import CompaniesIndex from "./pages/CompaniesIndex";
 import CompanyDetails from "./pages/CompanyDetails";
+import CreateCompany from "./pages/CreateCompany";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={CompaniesIndex} />
+          <Route path="/company/new" exact component={CreateCompany} />
           <Route path="/company/:id" exact component={CompanyDetails} />
         </Switch>
       </BrowserRouter>

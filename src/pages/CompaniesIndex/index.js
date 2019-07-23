@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 
 import { MainContainer } from "../../components/Layout";
-import { CompanyList } from "./styles";
+import { CompanyList, LinkButton } from "./styles";
 import CompanyListItem from "../../components/CompanyListItem";
 import { StyledButton, PageHeader } from "../../components/Common";
 import { BLUE, ORANGE, GREEN, RED } from "../../Colors";
@@ -39,7 +39,9 @@ class CompaniesIndex extends Component {
               linkTo={`/company/${company.id}`}
             />
           ))}
-          <StyledButton bgColor={GREEN}>Add Company</StyledButton>
+          <LinkButton to="/company/new" textColor="black" bgColor={GREEN}>
+            Add New Company
+          </LinkButton>
         </CompanyList>
       </MainContainer>
     );
