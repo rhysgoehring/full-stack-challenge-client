@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import GlobalStyles from "./GlobalStyles";
 
-import CompaniesIndex from "./pages/CompaniesIndex/CompaniesIndex";
+import CompaniesIndex from "./pages/CompaniesIndex";
+import CompanyDetails from "./pages/CompanyDetails";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={CompaniesIndex} />
+          <Route path="/company/:id" exact component={CompanyDetails} />
         </Switch>
       </BrowserRouter>
     </React.Fragment>

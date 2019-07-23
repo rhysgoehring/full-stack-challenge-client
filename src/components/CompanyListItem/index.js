@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
 
 const ListItemContainer = styled.li`
@@ -37,6 +38,11 @@ const DescriptionText = styled.p`
   font-size: 1.5rem;
 `;
 
+const LinkToMore = styled(Link)`
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+`;
+
 const CompanyListItem = props => {
   return (
     <ListItemContainer>
@@ -45,7 +51,7 @@ const CompanyListItem = props => {
         <HeaderH2>
           Located In: {props.city}, {props.state}
         </HeaderH2>
-        <p>More...</p>
+        <LinkToMore to={props.linkTo}>More...</LinkToMore>
       </HeaderContainer>
       <DescriptionText>{props.description}</DescriptionText>
     </ListItemContainer>

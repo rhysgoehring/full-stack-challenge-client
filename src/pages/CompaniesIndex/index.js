@@ -34,6 +34,7 @@ class CompaniesIndex extends Component {
               city={company.city}
               state={company.state}
               description={company.description}
+              linkTo={`/company/${company.id}`}
             />
           ))}
         </CompanyList>
