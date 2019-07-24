@@ -5,7 +5,7 @@ import { MainContainer } from "../../components/Layout";
 import { CompanyList, LinkButton } from "./styles";
 import CompanyListItem from "../../components/CompanyListItem";
 import { PageHeader } from "../../components/Common";
-import { BLUE, ORANGE, GREEN, RED } from "../../Colors";
+import { GREEN } from "../../Colors";
 
 class CompaniesIndex extends Component {
   constructor(props) {

@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { MainContainer } from "../../components/Layout";
-import { PageHeader, StyledButton } from "../../components/Common";
+import { PageHeader } from "../../components/Common";
 import CompanyForm from "../../components/CompanyForm";
 
 class CompanyEdit extends React.Component {
