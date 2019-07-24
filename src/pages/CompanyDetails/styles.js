@@ -37,7 +37,6 @@ const FounderBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 1px solid green;
   width: 100%;
 `;
 
