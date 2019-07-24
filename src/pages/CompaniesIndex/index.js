@@ -20,7 +20,9 @@ class CompaniesIndex extends Component {
   }
 
   fetchCompanies = async () => {
-    const { data } = await axios.get("http://localhost:3000/companies");
+    const { data } = await axios.get(
+      "https://ancient-woodland-20852.herokuapp.com/companies"
+    );
     this.setState({ companies: data });
   };
 

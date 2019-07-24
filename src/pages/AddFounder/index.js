@@ -17,7 +17,7 @@ class AddFounder extends React.Component {
 
     try {
       await axios.post(
-        `http://localhost:3000/companies/${id}/founders`,
+        `https://ancient-woodland-20852.herokuapp.com/companies/${id}/founders`,
         values
       );
       this.props.history.push(`/company/${id}`);

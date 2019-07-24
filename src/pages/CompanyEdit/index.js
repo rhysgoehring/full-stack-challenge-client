@@ -23,7 +23,10 @@ class CompanyEdit extends React.Component {
   onSubmit = async values => {
     const { id } = this.props.match.params;
     try {
-      await axios.put(`http://localhost:3000/companies/${id}`, values);
+      await axios.put(
+        `https://ancient-woodland-20852.herokuapp.com/companies/${id}`,
+        values
+      );
       this.props.history.push("/");
     } catch (error) {
       console.log("error editing company details");
@@ -33,7 +36,9 @@ class CompanyEdit extends React.Component {
   fetchCompanyInfo = async () => {
     const { id } = this.props.match.params;
     try {
-      const { data } = await axios.get(`http://localhost:3000/companies/${id}`);
+      const { data } = await axios.get(
+        `https://ancient-woodland-20852.herokuapp.com/companies/${id}`
+      );
       this.setState({
         city: data.city,
         date_founded: data.date_founded,

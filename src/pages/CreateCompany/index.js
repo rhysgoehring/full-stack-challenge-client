@@ -7,7 +7,10 @@ import CompanyForm from "../../components/CompanyForm";
 class CreateCompany extends React.Component {
   onSubmit = async values => {
     try {
-      await axios.post("http://localhost:3000/companies/", values);
+      await axios.post(
+        "https://ancient-woodland-20852.herokuapp.com/companies/",
+        values
+      );
       this.props.history.push("/");
     } catch (error) {
       console.log("error submitting new company: ", error);

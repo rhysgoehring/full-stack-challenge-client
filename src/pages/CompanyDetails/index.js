@@ -30,7 +30,9 @@ class CompanyDetails extends React.Component {
   fetchCompanyInfo = async () => {
     const { id } = this.props.match.params;
     try {
-      const { data } = await axios.get(`http://localhost:3000/companies/${id}`);
+      const { data } = await axios.get(
+        `https://ancient-woodland-20852.herokuapp.com/companies/${id}`
+      );
       this.setState({ company: data });
     } catch (error) {
       console.log("error fetching company info", error);
@@ -41,7 +43,7 @@ class CompanyDetails extends React.Component {
     const { id } = this.props.match.params;
     try {
       const { data } = await axios.get(
-        `http://localhost:3000/companies/${id}/founders`
+        `https://ancient-woodland-20852.herokuapp.com/companies/${id}/founders`
       );
       this.setState({ founders: data });
     } catch (error) {
@@ -62,7 +64,9 @@ class CompanyDetails extends React.Component {
   handleDelete = async () => {
     const { id } = this.props.match.params;
     try {
-      await axios.delete(`http://localhost:3000/companies/${id}`);
+      await axios.delete(
+        `https://ancient-woodland-20852.herokuapp.com/companies/${id}`
+      );
       this.props.history.push("/");
     } catch (error) {
       console.log("error deleting company", error);
