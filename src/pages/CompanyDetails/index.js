@@ -55,7 +55,8 @@ class CompanyDetails extends React.Component {
   };
 
   handleAddFounder = () => {
-    console.log("navigate to add founder page");
+    const { id } = this.props.match.params;
+    this.props.history.push(`/company/${id}/newFounder`);
   };
 
   handleDelete = async () => {
@@ -70,6 +71,7 @@ class CompanyDetails extends React.Component {
 
   renderFounders = () => {
     return this.state.founders.map(founder => {
+      console.log(founder);
       return (
         <div key={founder.id}>
           <DetailText>

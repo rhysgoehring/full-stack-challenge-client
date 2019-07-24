@@ -7,6 +7,7 @@ import CompaniesIndex from "./pages/CompaniesIndex";
 import CompanyDetails from "./pages/CompanyDetails";
 import CreateCompany from "./pages/CreateCompany";
 import CompanyEdit from "./pages/CompanyEdit";
+import AddFounder from "./pages/AddFounder";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/company/new" exact component={CreateCompany} />
           <Route path="/company/:id" exact component={CompanyDetails} />
           <Route path="/company/:id/edit" exact component={CompanyEdit} />
+          <Route path="/company/:id/newFounder" exact component={AddFounder} />
         </Switch>
       </BrowserRouter>
     </React.Fragment>
