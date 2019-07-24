@@ -6,6 +6,7 @@ import GlobalStyles from "./GlobalStyles";
 import CompaniesIndex from "./pages/CompaniesIndex";
 import CompanyDetails from "./pages/CompanyDetails";
 import CreateCompany from "./pages/CreateCompany";
+import CompanyEdit from "./pages/CompanyEdit";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" exact component={CompaniesIndex} />
           <Route path="/company/new" exact component={CreateCompany} />
           <Route path="/company/:id" exact component={CompanyDetails} />
+          <Route path="/company/:id/edit" exact component={CompanyEdit} />
         </Switch>
       </BrowserRouter>
     </React.Fragment>

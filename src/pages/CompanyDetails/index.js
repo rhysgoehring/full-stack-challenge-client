@@ -50,7 +50,8 @@ class CompanyDetails extends React.Component {
   };
 
   handleEdit = () => {
-    console.log("navigate to edit page");
+    const { id } = this.props.match.params;
+    this.props.history.push(`/company/${id}/edit`);
   };
 
   handleAddFounder = () => {

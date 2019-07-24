@@ -21,6 +21,7 @@ const CompanyForm = ({
 }) => {
   return (
     <Formik
+      enableReinitialize
       initialValues={{
         name: initialName,
         city: initialCity,
