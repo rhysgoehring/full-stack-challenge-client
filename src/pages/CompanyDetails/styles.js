@@ -32,6 +32,7 @@ const FounderContainer = styled.div`
   justify-content: space-evenly;
   border: 2px solid black;
   width: 90%;
+  border-radius: 2rem;
 `;
 
 const FounderBox = styled.div`

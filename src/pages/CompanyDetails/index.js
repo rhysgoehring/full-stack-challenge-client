@@ -71,7 +71,6 @@ class CompanyDetails extends React.Component {
 
   renderFounders = () => {
     return this.state.founders.map(founder => {
-      console.log(founder);
       return (
         <div key={founder.id}>
           <DetailText>
