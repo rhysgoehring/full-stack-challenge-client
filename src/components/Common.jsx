@@ -11,6 +11,7 @@ const StyledButton = styled.button`
   border-radius: 1rem;
   text-decoration: none;
   padding: 1.5rem;
+  width: ${({ width }) => width};
 `;
 
 const PageHeader = styled.h1`
