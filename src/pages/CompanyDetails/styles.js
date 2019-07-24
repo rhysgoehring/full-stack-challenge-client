@@ -6,6 +6,7 @@ const DetailAndButtonWrapper = styled.div`
   justify-content: center;
   width: 100%;
   border-bottom: 2px solid black;
+  border-top: 2px solid black;
 `;
 
 const DetailBox = styled.div`
